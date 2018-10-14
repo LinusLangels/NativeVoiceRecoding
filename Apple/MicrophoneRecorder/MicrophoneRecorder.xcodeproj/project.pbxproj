@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C1F0961D2D3AE600C113EF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C1F0951D2D3AE600C113EF /* AVFoundation.framework */; };
+		15C256951C4690BE0093CFA7 /* WavPostProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15C256911C4690BE0093CFA7 /* WavPostProcessor.cpp */; };
+		15C256961C4690BE0093CFA7 /* WriteWaveFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 15C256931C4690BE0093CFA7 /* WriteWaveFile.c */; };
+		15DA9AAB1D2D3525003BB80A /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 523EDE2F1C2029930033FA6C /* Recorder.m */; };
+		15DA9AAC1D2D352C003BB80A /* AudioQueueRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5273FA5D1C0CAE1D00620668 /* AudioQueueRecorder.m */; };
+		523EDE301C2029930033FA6C /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 523EDE2F1C2029930033FA6C /* Recorder.m */; };
+		5248DD891D265F0200EAD297 /* WavPostProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15C256911C4690BE0093CFA7 /* WavPostProcessor.cpp */; };
+		5248DD8C1D26613A00EAD297 /* WriteWaveFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 15C256931C4690BE0093CFA7 /* WriteWaveFile.c */; };
+		5273FA2C1C0C578100620668 /* MicrophoneRecorder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5273FA2B1C0C578100620668 /* MicrophoneRecorder.mm */; };
+		5273FA5E1C0CAE1D00620668 /* AudioQueueRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5273FA5D1C0CAE1D00620668 /* AudioQueueRecorder.m */; };
+		5273FA681C0CB63900620668 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5273FA641C0CB56600620668 /* AudioToolbox.framework */; };
+		5273FA691C0CB64800620668 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5273FA661C0CB59300620668 /* AudioUnit.framework */; };
+		5294A0521C467E8800DF1022 /* VoiceRecordingUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A03F1C467E8800DF1022 /* VoiceRecordingUtils.c */; };
+		5294A0531C467E8800DF1022 /* VoiceRecordingUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A03F1C467E8800DF1022 /* VoiceRecordingUtils.c */; };
+		5294A0541C467E8800DF1022 /* CalcSpeechEnergy.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0401C467E8800DF1022 /* CalcSpeechEnergy.c */; };
+		5294A0551C467E8800DF1022 /* CalcSpeechEnergy.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0401C467E8800DF1022 /* CalcSpeechEnergy.c */; };
+		5294A0561C467E8800DF1022 /* CalculateUnVoicedPhoneme.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0421C467E8800DF1022 /* CalculateUnVoicedPhoneme.c */; };
+		5294A0571C467E8800DF1022 /* CalculateUnVoicedPhoneme.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0421C467E8800DF1022 /* CalculateUnVoicedPhoneme.c */; };
+		5294A0581C467E8800DF1022 /* CalculateVoicedPhoneme.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0441C467E8800DF1022 /* CalculateVoicedPhoneme.c */; };
+		5294A0591C467E8800DF1022 /* CalculateVoicedPhoneme.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0441C467E8800DF1022 /* CalculateVoicedPhoneme.c */; };
+		5294A05A1C467E8800DF1022 /* DAFX.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0461C467E8800DF1022 /* DAFX.c */; };
+		5294A05B1C467E8800DF1022 /* DAFX.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0461C467E8800DF1022 /* DAFX.c */; };
+		5294A05C1C467E8800DF1022 /* DecimateAudioData.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0481C467E8800DF1022 /* DecimateAudioData.c */; };
+		5294A05D1C467E8800DF1022 /* DecimateAudioData.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0481C467E8800DF1022 /* DecimateAudioData.c */; };
+		5294A05E1C467E8800DF1022 /* PredictDisturbance.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A04A1C467E8800DF1022 /* PredictDisturbance.c */; };
+		5294A05F1C467E8800DF1022 /* PredictDisturbance.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A04A1C467E8800DF1022 /* PredictDisturbance.c */; };
+		5294A0601C467E8800DF1022 /* predictVoicedUnvoicedSpeech.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A04C1C467E8800DF1022 /* predictVoicedUnvoicedSpeech.c */; };
+		5294A0611C467E8800DF1022 /* predictVoicedUnvoicedSpeech.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A04C1C467E8800DF1022 /* predictVoicedUnvoicedSpeech.c */; };
+		5294A0621C467E8800DF1022 /* Vowel_Identification.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A04E1C467E8800DF1022 /* Vowel_Identification.c */; };
+		5294A0631C467E8800DF1022 /* Vowel_Identification.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A04E1C467E8800DF1022 /* Vowel_Identification.c */; };
+		5294A0641C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0501C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.c */; };
+		5294A0651C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0501C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.c */; };
+		5294A06B1C47E1E900DF1022 /* CalibrateAudioData.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0691C47E1E900DF1022 /* CalibrateAudioData.c */; };
+		5294A06C1C47E1E900DF1022 /* CalibrateAudioData.c in Sources */ = {isa = PBXBuildFile; fileRef = 5294A0691C47E1E900DF1022 /* CalibrateAudioData.c */; };
+		52ADE8701C5A0235005DF596 /* CalcPhonemeOrderProbability.c in Sources */ = {isa = PBXBuildFile; fileRef = 52ADE86E1C5A0235005DF596 /* CalcPhonemeOrderProbability.c */; };
+		52ADE8711C5A0235005DF596 /* CalcPhonemeOrderProbability.c in Sources */ = {isa = PBXBuildFile; fileRef = 52ADE86E1C5A0235005DF596 /* CalcPhonemeOrderProbability.c */; };
+		52B26EC11C2162FB00FD7A9A /* MicrophoneRecorder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 523EDE331C202F5E0033FA6C /* MicrophoneRecorder.h */; };
+		52C2302B1D37931C00C89916 /* WavPhonemeProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52899D441D367AF70064C3E5 /* WavPhonemeProcessor.cpp */; };
+		52C2302C1D37932600C89916 /* WavPhonemeProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52899D441D367AF70064C3E5 /* WavPhonemeProcessor.cpp */; };
+		52C888651C22C15D005F0E42 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C888641C22C15D005F0E42 /* AudioToolbox.framework */; };
+		52C888671C22C163005F0E42 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C888661C22C163005F0E42 /* AudioUnit.framework */; };
+		52E521521C17289F002DAB0A /* MicrophoneRecorder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5273FA2B1C0C578100620668 /* MicrophoneRecorder.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52A8D9301C17170F00C6CF4F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				52B26EC11C2162FB00FD7A9A /* MicrophoneRecorder.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15C1F0951D2D3AE600C113EF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		15C256911C4690BE0093CFA7 /* WavPostProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WavPostProcessor.cpp; path = ../../SharedSource/WavPostProcessor.cpp; sourceTree = "<group>"; };
+		15C256921C4690BE0093CFA7 /* WavPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WavPostProcessor.h; path = ../../SharedSource/WavPostProcessor.h; sourceTree = "<group>"; };
+		15C256931C4690BE0093CFA7 /* WriteWaveFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = WriteWaveFile.c; path = ../../SharedSource/WriteWaveFile.c; sourceTree = "<group>"; };
+		15C256941C4690BE0093CFA7 /* WriteWaveFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WriteWaveFile.h; path = ../../SharedSource/WriteWaveFile.h; sourceTree = "<group>"; };
+		523EDE2F1C2029930033FA6C /* Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recorder.m; sourceTree = "<group>"; };
+		523EDE321C2029A70033FA6C /* Recorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recorder.h; sourceTree = "<group>"; };
+		523EDE331C202F5E0033FA6C /* MicrophoneRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MicrophoneRecorder.h; sourceTree = "<group>"; };
+		523EDE341C203A7B0033FA6C /* SharedProjectHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedProjectHeader.pch; sourceTree = "<group>"; };
+		5273FA211C0C56C900620668 /* MicrophoneRecorder.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicrophoneRecorder.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5273FA241C0C56C900620668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5273FA2B1C0C578100620668 /* MicrophoneRecorder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MicrophoneRecorder.mm; sourceTree = "<group>"; };
+		5273FA5B1C0CACFF00620668 /* RecorderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecorderProtocol.h; sourceTree = "<group>"; };
+		5273FA5C1C0CAE1D00620668 /* AudioQueueRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueueRecorder.h; sourceTree = "<group>"; };
+		5273FA5D1C0CAE1D00620668 /* AudioQueueRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueueRecorder.m; sourceTree = "<group>"; };
+		5273FA621C0CB52400620668 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		5273FA641C0CB56600620668 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5273FA661C0CB59300620668 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		52899D441D367AF70064C3E5 /* WavPhonemeProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WavPhonemeProcessor.cpp; path = ../../SharedSource/WavPhonemeProcessor.cpp; sourceTree = "<group>"; };
+		52899D481D367BFF0064C3E5 /* WavPhonemeProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WavPhonemeProcessor.h; path = ../../SharedSource/WavPhonemeProcessor.h; sourceTree = "<group>"; };
+		5294A03E1C467E8800DF1022 /* VoiceRecordingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoiceRecordingUtils.h; path = ../../SharedSource/VoiceRecordingUtils.h; sourceTree = "<group>"; };
+		5294A03F1C467E8800DF1022 /* VoiceRecordingUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = VoiceRecordingUtils.c; path = ../../SharedSource/VoiceRecordingUtils.c; sourceTree = "<group>"; };
+		5294A0401C467E8800DF1022 /* CalcSpeechEnergy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CalcSpeechEnergy.c; path = ../../SharedSource/CalcSpeechEnergy.c; sourceTree = "<group>"; };
+		5294A0411C467E8800DF1022 /* CalcSpeechEnergy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalcSpeechEnergy.h; path = ../../SharedSource/CalcSpeechEnergy.h; sourceTree = "<group>"; };
+		5294A0421C467E8800DF1022 /* CalculateUnVoicedPhoneme.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CalculateUnVoicedPhoneme.c; path = ../../SharedSource/CalculateUnVoicedPhoneme.c; sourceTree = "<group>"; };
+		5294A0431C467E8800DF1022 /* CalculateUnVoicedPhoneme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateUnVoicedPhoneme.h; path = ../../SharedSource/CalculateUnVoicedPhoneme.h; sourceTree = "<group>"; };
+		5294A0441C467E8800DF1022 /* CalculateVoicedPhoneme.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CalculateVoicedPhoneme.c; path = ../../SharedSource/CalculateVoicedPhoneme.c; sourceTree = "<group>"; };
+		5294A0451C467E8800DF1022 /* CalculateVoicedPhoneme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateVoicedPhoneme.h; path = ../../SharedSource/CalculateVoicedPhoneme.h; sourceTree = "<group>"; };
+		5294A0461C467E8800DF1022 /* DAFX.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DAFX.c; path = ../../SharedSource/DAFX.c; sourceTree = "<group>"; };
+		5294A0471C467E8800DF1022 /* DAFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAFX.h; path = ../../SharedSource/DAFX.h; sourceTree = "<group>"; };
+		5294A0481C467E8800DF1022 /* DecimateAudioData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DecimateAudioData.c; path = ../../SharedSource/DecimateAudioData.c; sourceTree = "<group>"; };
+		5294A0491C467E8800DF1022 /* DecimateAudioData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecimateAudioData.h; path = ../../SharedSource/DecimateAudioData.h; sourceTree = "<group>"; };
+		5294A04A1C467E8800DF1022 /* PredictDisturbance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PredictDisturbance.c; path = ../../SharedSource/PredictDisturbance.c; sourceTree = "<group>"; };
+		5294A04B1C467E8800DF1022 /* PredictDisturbance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PredictDisturbance.h; path = ../../SharedSource/PredictDisturbance.h; sourceTree = "<group>"; };
+		5294A04C1C467E8800DF1022 /* predictVoicedUnvoicedSpeech.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = predictVoicedUnvoicedSpeech.c; path = ../../SharedSource/predictVoicedUnvoicedSpeech.c; sourceTree = "<group>"; };
+		5294A04D1C467E8800DF1022 /* predictVoicedUnvoicedSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = predictVoicedUnvoicedSpeech.h; path = ../../SharedSource/predictVoicedUnvoicedSpeech.h; sourceTree = "<group>"; };
+		5294A04E1C467E8800DF1022 /* Vowel_Identification.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Vowel_Identification.c; path = ../../SharedSource/Vowel_Identification.c; sourceTree = "<group>"; };
+		5294A04F1C467E8800DF1022 /* Vowel_Identification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vowel_Identification.h; path = ../../SharedSource/Vowel_Identification.h; sourceTree = "<group>"; };
+		5294A0501C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = EnhancedTalkVsNoiseDetection.c; path = ../../SharedSource/EnhancedTalkVsNoiseDetection.c; sourceTree = "<group>"; };
+		5294A0511C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnhancedTalkVsNoiseDetection.h; path = ../../SharedSource/EnhancedTalkVsNoiseDetection.h; sourceTree = "<group>"; };
+		5294A0691C47E1E900DF1022 /* CalibrateAudioData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CalibrateAudioData.c; path = ../../SharedSource/CalibrateAudioData.c; sourceTree = "<group>"; };
+		5294A06A1C47E1E900DF1022 /* CalibrateAudioData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalibrateAudioData.h; path = ../../SharedSource/CalibrateAudioData.h; sourceTree = "<group>"; };
+		52A8D9321C17170F00C6CF4F /* libMicrophoneRecorderStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMicrophoneRecorderStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ADE86E1C5A0235005DF596 /* CalcPhonemeOrderProbability.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CalcPhonemeOrderProbability.c; path = ../../SharedSource/CalcPhonemeOrderProbability.c; sourceTree = "<group>"; };
+		52ADE86F1C5A0235005DF596 /* CalcPhonemeOrderProbability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalcPhonemeOrderProbability.h; path = ../../SharedSource/CalcPhonemeOrderProbability.h; sourceTree = "<group>"; };
+		52C888641C22C15D005F0E42 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		52C888661C22C163005F0E42 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5273FA1E1C0C56C900620668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5273FA691C0CB64800620668 /* AudioUnit.framework in Frameworks */,
+				5273FA681C0CB63900620668 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A8D92F1C17170F00C6CF4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C1F0961D2D3AE600C113EF /* AVFoundation.framework in Frameworks */,
+				52C888671C22C163005F0E42 /* AudioUnit.framework in Frameworks */,
+				52C888651C22C15D005F0E42 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5273FA181C0C56C900620668 = {
+			isa = PBXGroup;
+			children = (
+				15C1F0951D2D3AE600C113EF /* AVFoundation.framework */,
+				52C888661C22C163005F0E42 /* AudioUnit.framework */,
+				52C888641C22C15D005F0E42 /* AudioToolbox.framework */,
+				523EDE341C203A7B0033FA6C /* SharedProjectHeader.pch */,
+				523EDE321C2029A70033FA6C /* Recorder.h */,
+				523EDE2F1C2029930033FA6C /* Recorder.m */,
+				5273FA661C0CB59300620668 /* AudioUnit.framework */,
+				5273FA641C0CB56600620668 /* AudioToolbox.framework */,
+				5273FA621C0CB52400620668 /* CoreAudio.framework */,
+				5273FA231C0C56C900620668 /* MicrophoneRecorder */,
+				52A8D9331C17170F00C6CF4F /* MicrophoneRecorderStatic */,
+				5273FA221C0C56C900620668 /* Products */,
+				5273FA5B1C0CACFF00620668 /* RecorderProtocol.h */,
+				5273FA5C1C0CAE1D00620668 /* AudioQueueRecorder.h */,
+				5273FA5D1C0CAE1D00620668 /* AudioQueueRecorder.m */,
+				523EDE331C202F5E0033FA6C /* MicrophoneRecorder.h */,
+				5273FA2B1C0C578100620668 /* MicrophoneRecorder.mm */,
+				5294A0691C47E1E900DF1022 /* CalibrateAudioData.c */,
+				5294A06A1C47E1E900DF1022 /* CalibrateAudioData.h */,
+				5294A03E1C467E8800DF1022 /* VoiceRecordingUtils.h */,
+				5294A03F1C467E8800DF1022 /* VoiceRecordingUtils.c */,
+				52ADE86E1C5A0235005DF596 /* CalcPhonemeOrderProbability.c */,
+				52ADE86F1C5A0235005DF596 /* CalcPhonemeOrderProbability.h */,
+				5294A0401C467E8800DF1022 /* CalcSpeechEnergy.c */,
+				5294A0411C467E8800DF1022 /* CalcSpeechEnergy.h */,
+				5294A0421C467E8800DF1022 /* CalculateUnVoicedPhoneme.c */,
+				5294A0431C467E8800DF1022 /* CalculateUnVoicedPhoneme.h */,
+				5294A0441C467E8800DF1022 /* CalculateVoicedPhoneme.c */,
+				5294A0451C467E8800DF1022 /* CalculateVoicedPhoneme.h */,
+				5294A0461C467E8800DF1022 /* DAFX.c */,
+				5294A0471C467E8800DF1022 /* DAFX.h */,
+				5294A0481C467E8800DF1022 /* DecimateAudioData.c */,
+				5294A0491C467E8800DF1022 /* DecimateAudioData.h */,
+				5294A04A1C467E8800DF1022 /* PredictDisturbance.c */,
+				5294A04B1C467E8800DF1022 /* PredictDisturbance.h */,
+				5294A04C1C467E8800DF1022 /* predictVoicedUnvoicedSpeech.c */,
+				5294A04D1C467E8800DF1022 /* predictVoicedUnvoicedSpeech.h */,
+				5294A04E1C467E8800DF1022 /* Vowel_Identification.c */,
+				5294A04F1C467E8800DF1022 /* Vowel_Identification.h */,
+				5294A0501C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.c */,
+				5294A0511C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.h */,
+				52899D441D367AF70064C3E5 /* WavPhonemeProcessor.cpp */,
+				52899D481D367BFF0064C3E5 /* WavPhonemeProcessor.h */,
+				15C256911C4690BE0093CFA7 /* WavPostProcessor.cpp */,
+				15C256921C4690BE0093CFA7 /* WavPostProcessor.h */,
+				15C256931C4690BE0093CFA7 /* WriteWaveFile.c */,
+				15C256941C4690BE0093CFA7 /* WriteWaveFile.h */,
+			);
+			sourceTree = "<group>";
+		};
+		5273FA221C0C56C900620668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5273FA211C0C56C900620668 /* MicrophoneRecorder.bundle */,
+				52A8D9321C17170F00C6CF4F /* libMicrophoneRecorderStatic.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5273FA231C0C56C900620668 /* MicrophoneRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				5273FA241C0C56C900620668 /* Info.plist */,
+			);
+			path = MicrophoneRecorder;
+			sourceTree = "<group>";
+		};
+		52A8D9331C17170F00C6CF4F /* MicrophoneRecorderStatic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MicrophoneRecorderStatic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5273FA201C0C56C900620668 /* MicrophoneRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5273FA271C0C56C900620668 /* Build configuration list for PBXNativeTarget "MicrophoneRecorder" */;
+			buildPhases = (
+				5273FA1D1C0C56C900620668 /* Sources */,
+				5273FA1E1C0C56C900620668 /* Frameworks */,
+				5273FA1F1C0C56C900620668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicrophoneRecorder;
+			productName = MicrophoneRecorder;
+			productReference = 5273FA211C0C56C900620668 /* MicrophoneRecorder.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		52A8D9311C17170F00C6CF4F /* MicrophoneRecorderStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A8D93A1C17170F00C6CF4F /* Build configuration list for PBXNativeTarget "MicrophoneRecorderStatic" */;
+			buildPhases = (
+				52A8D92E1C17170F00C6CF4F /* Sources */,
+				52A8D92F1C17170F00C6CF4F /* Frameworks */,
+				52A8D9301C17170F00C6CF4F /* CopyFiles */,
+				52A8D93C1C171ACA00C6CF4F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicrophoneRecorderStatic;
+			productName = MicrophoneRecorderStatic;
+			productReference = 52A8D9321C17170F00C6CF4F /* libMicrophoneRecorderStatic.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5273FA191C0C56C900620668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "John Philipsson";
+				TargetAttributes = {
+					5273FA201C0C56C900620668 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					52A8D9311C17170F00C6CF4F = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 5273FA1C1C0C56C900620668 /* Build configuration list for PBXProject "MicrophoneRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5273FA181C0C56C900620668;
+			productRefGroup = 5273FA221C0C56C900620668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5273FA201C0C56C900620668 /* MicrophoneRecorder */,
+				52A8D9311C17170F00C6CF4F /* MicrophoneRecorderStatic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5273FA1F1C0C56C900620668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52A8D93C1C171ACA00C6CF4F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5273FA1D1C0C56C900620668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C2302B1D37931C00C89916 /* WavPhonemeProcessor.cpp in Sources */,
+				5294A0541C467E8800DF1022 /* CalcSpeechEnergy.c in Sources */,
+				15C256951C4690BE0093CFA7 /* WavPostProcessor.cpp in Sources */,
+				5294A0581C467E8800DF1022 /* CalculateVoicedPhoneme.c in Sources */,
+				5294A0621C467E8800DF1022 /* Vowel_Identification.c in Sources */,
+				5273FA2C1C0C578100620668 /* MicrophoneRecorder.mm in Sources */,
+				5273FA5E1C0CAE1D00620668 /* AudioQueueRecorder.m in Sources */,
+				5294A0641C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.c in Sources */,
+				15C256961C4690BE0093CFA7 /* WriteWaveFile.c in Sources */,
+				52ADE8701C5A0235005DF596 /* CalcPhonemeOrderProbability.c in Sources */,
+				5294A06B1C47E1E900DF1022 /* CalibrateAudioData.c in Sources */,
+				5294A0521C467E8800DF1022 /* VoiceRecordingUtils.c in Sources */,
+				5294A05C1C467E8800DF1022 /* DecimateAudioData.c in Sources */,
+				5294A0561C467E8800DF1022 /* CalculateUnVoicedPhoneme.c in Sources */,
+				5294A0601C467E8800DF1022 /* predictVoicedUnvoicedSpeech.c in Sources */,
+				5294A05A1C467E8800DF1022 /* DAFX.c in Sources */,
+				523EDE301C2029930033FA6C /* Recorder.m in Sources */,
+				5294A05E1C467E8800DF1022 /* PredictDisturbance.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A8D92E1C17170F00C6CF4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C2302C1D37932600C89916 /* WavPhonemeProcessor.cpp in Sources */,
+				15DA9AAC1D2D352C003BB80A /* AudioQueueRecorder.m in Sources */,
+				15DA9AAB1D2D3525003BB80A /* Recorder.m in Sources */,
+				5248DD8C1D26613A00EAD297 /* WriteWaveFile.c in Sources */,
+				5248DD891D265F0200EAD297 /* WavPostProcessor.cpp in Sources */,
+				5294A0551C467E8800DF1022 /* CalcSpeechEnergy.c in Sources */,
+				5294A0591C467E8800DF1022 /* CalculateVoicedPhoneme.c in Sources */,
+				5294A0631C467E8800DF1022 /* Vowel_Identification.c in Sources */,
+				52E521521C17289F002DAB0A /* MicrophoneRecorder.mm in Sources */,
+				5294A0651C467E8800DF1022 /* EnhancedTalkVsNoiseDetection.c in Sources */,
+				5294A0531C467E8800DF1022 /* VoiceRecordingUtils.c in Sources */,
+				5294A05D1C467E8800DF1022 /* DecimateAudioData.c in Sources */,
+				52ADE8711C5A0235005DF596 /* CalcPhonemeOrderProbability.c in Sources */,
+				5294A0571C467E8800DF1022 /* CalculateUnVoicedPhoneme.c in Sources */,
+				5294A0611C467E8800DF1022 /* predictVoicedUnvoicedSpeech.c in Sources */,
+				5294A05B1C467E8800DF1022 /* DAFX.c in Sources */,
+				5294A05F1C467E8800DF1022 /* PredictDisturbance.c in Sources */,
+				5294A06C1C47E1E900DF1022 /* CalibrateAudioData.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5273FA251C0C56C900620668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5273FA261C0C56C900620668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5273FA281C0C56C900620668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/John/AppleNativeVoiceRecording/Apple/MicrophoneRecorder/SharedProjectHeader.pch;
+				INFOPLIST_FILE = MicrophoneRecorder/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Plotagon.MicrophoneRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5273FA291C0C56C900620668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/John/AppleNativeVoiceRecording/Apple/MicrophoneRecorder/SharedProjectHeader.pch;
+				INFOPLIST_FILE = MicrophoneRecorder/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = Plotagon.MicrophoneRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		52A8D9381C17170F00C6CF4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/John/AppleNativeVoiceRecording/Apple/MicrophoneRecorder/SharedProjectHeader.pch;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		52A8D9391C17170F00C6CF4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/John/AppleNativeVoiceRecording/Apple/MicrophoneRecorder/SharedProjectHeader.pch;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5273FA1C1C0C56C900620668 /* Build configuration list for PBXProject "MicrophoneRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5273FA251C0C56C900620668 /* Debug */,
+				5273FA261C0C56C900620668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5273FA271C0C56C900620668 /* Build configuration list for PBXNativeTarget "MicrophoneRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5273FA281C0C56C900620668 /* Debug */,
+				5273FA291C0C56C900620668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A8D93A1C17170F00C6CF4F /* Build configuration list for PBXNativeTarget "MicrophoneRecorderStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A8D9381C17170F00C6CF4F /* Debug */,
+				52A8D9391C17170F00C6CF4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5273FA191C0C56C900620668 /* Project object */;
+}

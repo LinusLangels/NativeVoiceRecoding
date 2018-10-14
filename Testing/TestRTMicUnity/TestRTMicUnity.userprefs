@@ -1,0 +1,35 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/VoiceRecording/MicrophoneAPI/StreamedMicrophone.cs">
+    <Files>
+      <File FileName="Assets/Animation/AnimationUtilities.cs" Line="224" Column="6" />
+      <File FileName="Assets/Scripts/MicrophoneWrappers.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Main.cs" Line="66" Column="29" />
+      <File FileName="Assets/Scripts/VoiceRecording/StateMachineStates/RecordingMachineBase.cs" Line="47" Column="31" />
+      <File FileName="Assets/Scripts/VoiceRecording/StateMachineStates/BeginRecordingMachine.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/VoiceRecording/VoiceRecordingAnimation.cs" Line="35" Column="14" />
+      <File FileName="Assets/Scripts/VoiceRecording/PhonemeBuffer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MemHelp.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StaticHelpers/MathHelp.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StaticHelpers/TransformHelp.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/VoiceRecording/StateMachineStates/EndRecordingMachine.cs" Line="55" Column="8" />
+      <File FileName="Assets/Scripts/VoiceRecording/StateMachineStates/RecordRecordingMachine.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/VoiceRecording/TextAnalysisTools.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/VoiceRecording/MicrophoneAPI/StreamedMicrophone.cs" Line="163" Column="12" />
+      <File FileName="Assets/Animation/AnimationData/FacialAnimationDatabase.cs" Line="82" Column="6" />
+      <File FileName="Assets/Animation/AnimationData/AnimationMetaDatabase.cs" Line="94" Column="6" />
+      <File FileName="Assets/Animation/FacialAnimation.cs" Line="56" Column="30" />
+      <File FileName="Assets/Animation/Utility/HelperJoints.cs" Line="92" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/linus/AppleNativeVoiceRecording/Testing/TestRTMicUnity/Assets/Animation/FacialAnimation.cs" line="249" column="1" />
+      <Breakpoint file="/Users/linus/AppleNativeVoiceRecording/Testing/TestRTMicUnity/Assets/Animation/FacialAnimation.cs" line="251" column="1" />
+      <Breakpoint file="/Users/linus/AppleNativeVoiceRecording/Testing/TestRTMicUnity/Assets/Animation/FacialAnimation.cs" line="255" column="1" />
+      <Breakpoint file="/Users/linus/AppleNativeVoiceRecording/Testing/TestRTMicUnity/Assets/Animation/FacialAnimation.cs" line="253" column="1" />
+      <Breakpoint file="/Users/linus/AppleNativeVoiceRecording/Testing/TestRTMicUnity/Assets/Animation/FacialAnimation.cs" line="200" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

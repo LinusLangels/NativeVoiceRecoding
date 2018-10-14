@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37AD58C1145186CF000D2D8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AD58C0145186CF000D2D8D /* UIKit.framework */; };
+		37AD58C3145186CF000D2D8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AD58C2145186CF000D2D8D /* Foundation.framework */; };
+		37AD58C5145186CF000D2D8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AD58C4145186CF000D2D8D /* CoreGraphics.framework */; };
+		37AD58CB145186CF000D2D8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37AD58C9145186CF000D2D8D /* InfoPlist.strings */; };
+		37AD58CD145186CF000D2D8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD58CC145186CF000D2D8D /* main.m */; };
+		37AD58D1145186CF000D2D8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD58D0145186CF000D2D8D /* AppDelegate.m */; };
+		37AD58E314518A1A000D2D8D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AD58E214518A1A000D2D8D /* AudioToolbox.framework */; };
+		37AD58E814518AC5000D2D8D /* MyAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD58E614518AC5000D2D8D /* MyAudioViewController.m */; };
+		37AD58E914518AC5000D2D8D /* MyAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37AD58E714518AC5000D2D8D /* MyAudioViewController.xib */; };
+		37AD58EB14518BD4000D2D8D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 37AD58EA14518BD4000D2D8D /* Default.png */; };
+		5203250E1BDA8B160095AD8C /* WriteWaveFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 5203250C1BDA8B160095AD8C /* WriteWaveFile.c */; };
+		520325101BDA8B9D0095AD8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5203250F1BDA8B9D0095AD8C /* AVFoundation.framework */; };
+		5214DD1F1BC3C0EA005D3E65 /* CalcSpeechEnergy.c in Sources */ = {isa = PBXBuildFile; fileRef = 5214DD171BC3C0EA005D3E65 /* CalcSpeechEnergy.c */; };
+		5214DD201BC3C0EA005D3E65 /* predictVoicedUnvoicedSpeech.c in Sources */ = {isa = PBXBuildFile; fileRef = 5214DD191BC3C0EA005D3E65 /* predictVoicedUnvoicedSpeech.c */; };
+		5214DD211BC3C0EA005D3E65 /* VoiceRecordingUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 5214DD1B1BC3C0EA005D3E65 /* VoiceRecordingUtils.c */; };
+		5214DD221BC3C0EA005D3E65 /* Vowel_Identification.c in Sources */ = {isa = PBXBuildFile; fileRef = 5214DD1D1BC3C0EA005D3E65 /* Vowel_Identification.c */; };
+		5214DD291BC417C2005D3E65 /* DecimateAudioData.c in Sources */ = {isa = PBXBuildFile; fileRef = 5214DD271BC417C2005D3E65 /* DecimateAudioData.c */; };
+		5214DD2B1BC4F4EE005D3E65 /* IMG_2351.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 5214DD2A1BC4F4EE005D3E65 /* IMG_2351.PNG */; };
+		52779FC81BD00E3000329CAD /* CalculateUnVoicedPhoneme.c in Sources */ = {isa = PBXBuildFile; fileRef = 52779FC21BD00E3000329CAD /* CalculateUnVoicedPhoneme.c */; };
+		52779FC91BD00E3000329CAD /* CalculateVoicedPhoneme.c in Sources */ = {isa = PBXBuildFile; fileRef = 52779FC31BD00E3000329CAD /* CalculateVoicedPhoneme.c */; };
+		52779FCA1BD00E3000329CAD /* PredictDisturbance.c in Sources */ = {isa = PBXBuildFile; fileRef = 52779FC61BD00E3000329CAD /* PredictDisturbance.c */; };
+		5277A1171BD4F8C100329CAD /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277A1161BD4F8C100329CAD /* AudioProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52E4D0D61BFB37240003A0CB /* DAFX.c in Sources */ = {isa = PBXBuildFile; fileRef = 52E4D0D41BFB37240003A0CB /* DAFX.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37AD58BC145186CF000D2D8D /* MicInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37AD58C0145186CF000D2D8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37AD58C2145186CF000D2D8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37AD58C4145186CF000D2D8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37AD58C8145186CF000D2D8D /* MicInput-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MicInput-Info.plist"; sourceTree = "<group>"; };
+		37AD58CA145186CF000D2D8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37AD58CC145186CF000D2D8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37AD58CE145186CF000D2D8D /* MicInput-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MicInput-Prefix.pch"; sourceTree = "<group>"; };
+		37AD58CF145186CF000D2D8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37AD58D0145186CF000D2D8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		37AD58DB14518715000D2D8D /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioProcessor.h; sourceTree = "<group>"; };
+		37AD58E214518A1A000D2D8D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		37AD58E514518AC5000D2D8D /* MyAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAudioViewController.h; sourceTree = "<group>"; };
+		37AD58E614518AC5000D2D8D /* MyAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAudioViewController.m; sourceTree = "<group>"; };
+		37AD58E714518AC5000D2D8D /* MyAudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAudioViewController.xib; sourceTree = "<group>"; };
+		37AD58EA14518BD4000D2D8D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		37AD58EC14518BD6000D2D8D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		5203250C1BDA8B160095AD8C /* WriteWaveFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = WriteWaveFile.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/WriteWaveFile.c"; sourceTree = "<group>"; };
+		5203250D1BDA8B160095AD8C /* WriteWaveFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WriteWaveFile.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/WriteWaveFile.h"; sourceTree = "<group>"; };
+		5203250F1BDA8B9D0095AD8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5214DD171BC3C0EA005D3E65 /* CalcSpeechEnergy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CalcSpeechEnergy.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/CalcSpeechEnergy.c"; sourceTree = "<group>"; };
+		5214DD181BC3C0EA005D3E65 /* CalcSpeechEnergy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalcSpeechEnergy.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/CalcSpeechEnergy.h"; sourceTree = "<group>"; };
+		5214DD191BC3C0EA005D3E65 /* predictVoicedUnvoicedSpeech.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = predictVoicedUnvoicedSpeech.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/predictVoicedUnvoicedSpeech.c"; sourceTree = "<group>"; };
+		5214DD1A1BC3C0EA005D3E65 /* predictVoicedUnvoicedSpeech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = predictVoicedUnvoicedSpeech.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/predictVoicedUnvoicedSpeech.h"; sourceTree = "<group>"; };
+		5214DD1B1BC3C0EA005D3E65 /* VoiceRecordingUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = VoiceRecordingUtils.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/VoiceRecordingUtils.c"; sourceTree = "<group>"; };
+		5214DD1C1BC3C0EA005D3E65 /* VoiceRecordingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoiceRecordingUtils.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/VoiceRecordingUtils.h"; sourceTree = "<group>"; };
+		5214DD1D1BC3C0EA005D3E65 /* Vowel_Identification.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Vowel_Identification.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/Vowel_Identification.c"; sourceTree = "<group>"; };
+		5214DD1E1BC3C0EA005D3E65 /* Vowel_Identification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vowel_Identification.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/Vowel_Identification.h"; sourceTree = "<group>"; };
+		5214DD271BC417C2005D3E65 /* DecimateAudioData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DecimateAudioData.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/DecimateAudioData.c"; sourceTree = "<group>"; };
+		5214DD281BC417C2005D3E65 /* DecimateAudioData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecimateAudioData.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/DecimateAudioData.h"; sourceTree = "<group>"; };
+		5214DD2A1BC4F4EE005D3E65 /* IMG_2351.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_2351.PNG; sourceTree = SOURCE_ROOT; };
+		52779FC21BD00E3000329CAD /* CalculateUnVoicedPhoneme.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CalculateUnVoicedPhoneme.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/CalculateUnVoicedPhoneme.c"; sourceTree = "<group>"; };
+		52779FC31BD00E3000329CAD /* CalculateVoicedPhoneme.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CalculateVoicedPhoneme.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/CalculateVoicedPhoneme.c"; sourceTree = "<group>"; };
+		52779FC41BD00E3000329CAD /* CalculateUnVoicedPhoneme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateUnVoicedPhoneme.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/CalculateUnVoicedPhoneme.h"; sourceTree = "<group>"; };
+		52779FC51BD00E3000329CAD /* CalculateVoicedPhoneme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateVoicedPhoneme.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/CalculateVoicedPhoneme.h"; sourceTree = "<group>"; };
+		52779FC61BD00E3000329CAD /* PredictDisturbance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PredictDisturbance.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/PredictDisturbance.c"; sourceTree = "<group>"; };
+		52779FC71BD00E3000329CAD /* PredictDisturbance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PredictDisturbance.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/PredictDisturbance.h"; sourceTree = "<group>"; };
+		5277A0FF1BD4E56800329CAD /* VoiceRecordLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoiceRecordLib.h; path = "../../VoiceRecordLib/DerivedData/VoiceRecordLib/Build/Products/Debug-iphonesimulator/include/VoiceRecordLib/VoiceRecordLib.h"; sourceTree = "<group>"; };
+		5277A1161BD4F8C100329CAD /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioProcessor.m; sourceTree = "<group>"; };
+		52E4D0D41BFB37240003A0CB /* DAFX.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DAFX.c; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/DAFX.c"; sourceTree = "<group>"; };
+		52E4D0D51BFB37240003A0CB /* DAFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAFX.h; path = "../../Plotagon-RecordVoice/Plotagon-RecordVoice/DAFX.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37AD58B9145186CF000D2D8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520325101BDA8B9D0095AD8C /* AVFoundation.framework in Frameworks */,
+				37AD58E314518A1A000D2D8D /* AudioToolbox.framework in Frameworks */,
+				37AD58C1145186CF000D2D8D /* UIKit.framework in Frameworks */,
+				37AD58C3145186CF000D2D8D /* Foundation.framework in Frameworks */,
+				37AD58C5145186CF000D2D8D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3785BDD21451BBC500009036 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				37AD58DB14518715000D2D8D /* AudioProcessor.h */,
+				5277A1161BD4F8C100329CAD /* AudioProcessor.m */,
+				5214DD231BC3DC9A005D3E65 /* VoiceRecording */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		3785BDD31451BBD600009036 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3785BDD41451BBE000009036 /* Controller */,
+				3785BDD51451BBED00009036 /* Nibs */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3785BDD41451BBE000009036 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37AD58E514518AC5000D2D8D /* MyAudioViewController.h */,
+				37AD58E614518AC5000D2D8D /* MyAudioViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3785BDD51451BBED00009036 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				37AD58E714518AC5000D2D8D /* MyAudioViewController.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		37AD58B1145186CE000D2D8D = {
+			isa = PBXGroup;
+			children = (
+				37AD58C6145186CF000D2D8D /* MicInput */,
+				37AD58BF145186CF000D2D8D /* Frameworks */,
+				37AD58BD145186CF000D2D8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37AD58BD145186CF000D2D8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37AD58BC145186CF000D2D8D /* MicInput.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37AD58BF145186CF000D2D8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5203250F1BDA8B9D0095AD8C /* AVFoundation.framework */,
+				37AD58E214518A1A000D2D8D /* AudioToolbox.framework */,
+				37AD58C0145186CF000D2D8D /* UIKit.framework */,
+				37AD58C2145186CF000D2D8D /* Foundation.framework */,
+				37AD58C4145186CF000D2D8D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37AD58C6145186CF000D2D8D /* MicInput */ = {
+			isa = PBXGroup;
+			children = (
+				3785BDD21451BBC500009036 /* Audio */,
+				3785BDD31451BBD600009036 /* Views */,
+				37AD58E414518AA4000D2D8D /* Delegate */,
+				37AD58C7145186CF000D2D8D /* Supporting Files */,
+			);
+			path = MicInput;
+			sourceTree = "<group>";
+		};
+		37AD58C7145186CF000D2D8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37AD58EC14518BD6000D2D8D /* Default@2x.png */,
+				5214DD2A1BC4F4EE005D3E65 /* IMG_2351.PNG */,
+				37AD58EA14518BD4000D2D8D /* Default.png */,
+				37AD58C8145186CF000D2D8D /* MicInput-Info.plist */,
+				37AD58C9145186CF000D2D8D /* InfoPlist.strings */,
+				37AD58CC145186CF000D2D8D /* main.m */,
+				37AD58CE145186CF000D2D8D /* MicInput-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37AD58E414518AA4000D2D8D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				37AD58CF145186CF000D2D8D /* AppDelegate.h */,
+				37AD58D0145186CF000D2D8D /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		5214DD231BC3DC9A005D3E65 /* VoiceRecording */ = {
+			isa = PBXGroup;
+			children = (
+				5214DD181BC3C0EA005D3E65 /* CalcSpeechEnergy.h */,
+				5277A0FF1BD4E56800329CAD /* VoiceRecordLib.h */,
+				5214DD171BC3C0EA005D3E65 /* CalcSpeechEnergy.c */,
+				5214DD1A1BC3C0EA005D3E65 /* predictVoicedUnvoicedSpeech.h */,
+				5214DD191BC3C0EA005D3E65 /* predictVoicedUnvoicedSpeech.c */,
+				5214DD1C1BC3C0EA005D3E65 /* VoiceRecordingUtils.h */,
+				5214DD1B1BC3C0EA005D3E65 /* VoiceRecordingUtils.c */,
+				5214DD1E1BC3C0EA005D3E65 /* Vowel_Identification.h */,
+				52E4D0D41BFB37240003A0CB /* DAFX.c */,
+				52E4D0D51BFB37240003A0CB /* DAFX.h */,
+				5214DD1D1BC3C0EA005D3E65 /* Vowel_Identification.c */,
+				5214DD271BC417C2005D3E65 /* DecimateAudioData.c */,
+				5214DD281BC417C2005D3E65 /* DecimateAudioData.h */,
+				52779FC21BD00E3000329CAD /* CalculateUnVoicedPhoneme.c */,
+				52779FC31BD00E3000329CAD /* CalculateVoicedPhoneme.c */,
+				52779FC41BD00E3000329CAD /* CalculateUnVoicedPhoneme.h */,
+				52779FC51BD00E3000329CAD /* CalculateVoicedPhoneme.h */,
+				52779FC61BD00E3000329CAD /* PredictDisturbance.c */,
+				5203250C1BDA8B160095AD8C /* WriteWaveFile.c */,
+				5203250D1BDA8B160095AD8C /* WriteWaveFile.h */,
+				52779FC71BD00E3000329CAD /* PredictDisturbance.h */,
+			);
+			name = VoiceRecording;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37AD58BB145186CF000D2D8D /* MicInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37AD58D4145186CF000D2D8D /* Build configuration list for PBXNativeTarget "MicInput" */;
+			buildPhases = (
+				37AD58B8145186CF000D2D8D /* Sources */,
+				37AD58B9145186CF000D2D8D /* Frameworks */,
+				37AD58BA145186CF000D2D8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicInput;
+			productName = MicInput;
+			productReference = 37AD58BC145186CF000D2D8D /* MicInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37AD58B3145186CE000D2D8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "SEMIKRON International GmbH";
+				TargetAttributes = {
+					37AD58BB145186CF000D2D8D = {
+						DevelopmentTeam = DVDGZKLA2M;
+					};
+				};
+			};
+			buildConfigurationList = 37AD58B6145186CE000D2D8D /* Build configuration list for PBXProject "MicInput" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37AD58B1145186CE000D2D8D;
+			productRefGroup = 37AD58BD145186CF000D2D8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37AD58BB145186CF000D2D8D /* MicInput */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37AD58BA145186CF000D2D8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AD58CB145186CF000D2D8D /* InfoPlist.strings in Resources */,
+				37AD58E914518AC5000D2D8D /* MyAudioViewController.xib in Resources */,
+				5214DD2B1BC4F4EE005D3E65 /* IMG_2351.PNG in Resources */,
+				37AD58EB14518BD4000D2D8D /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37AD58B8145186CF000D2D8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52779FCA1BD00E3000329CAD /* PredictDisturbance.c in Sources */,
+				37AD58CD145186CF000D2D8D /* main.m in Sources */,
+				52E4D0D61BFB37240003A0CB /* DAFX.c in Sources */,
+				37AD58D1145186CF000D2D8D /* AppDelegate.m in Sources */,
+				5214DD211BC3C0EA005D3E65 /* VoiceRecordingUtils.c in Sources */,
+				52779FC91BD00E3000329CAD /* CalculateVoicedPhoneme.c in Sources */,
+				5214DD1F1BC3C0EA005D3E65 /* CalcSpeechEnergy.c in Sources */,
+				5214DD201BC3C0EA005D3E65 /* predictVoicedUnvoicedSpeech.c in Sources */,
+				52779FC81BD00E3000329CAD /* CalculateUnVoicedPhoneme.c in Sources */,
+				37AD58E814518AC5000D2D8D /* MyAudioViewController.m in Sources */,
+				5277A1171BD4F8C100329CAD /* AudioProcessor.m in Sources */,
+				5214DD221BC3C0EA005D3E65 /* Vowel_Identification.c in Sources */,
+				5203250E1BDA8B160095AD8C /* WriteWaveFile.c in Sources */,
+				5214DD291BC417C2005D3E65 /* DecimateAudioData.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37AD58C9145186CF000D2D8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37AD58CA145186CF000D2D8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37AD58D2145186CF000D2D8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37AD58D3145186CF000D2D8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37AD58D5145186CF000D2D8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MicInput/MicInput-Prefix.pch";
+				INFOPLIST_FILE = "MicInput/MicInput-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37AD58D6145186CF000D2D8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MicInput/MicInput-Prefix.pch";
+				INFOPLIST_FILE = "MicInput/MicInput-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37AD58B6145186CE000D2D8D /* Build configuration list for PBXProject "MicInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37AD58D2145186CF000D2D8D /* Debug */,
+				37AD58D3145186CF000D2D8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37AD58D4145186CF000D2D8D /* Build configuration list for PBXNativeTarget "MicInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37AD58D5145186CF000D2D8D /* Debug */,
+				37AD58D6145186CF000D2D8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37AD58B3145186CE000D2D8D /* Project object */;
+}
